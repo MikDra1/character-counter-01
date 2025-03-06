@@ -1,0 +1,95 @@
+:root {
+  --neutral-900: #12131a;
+  --neutral-800: #21222c;
+  --neutral-700: #2a2b37;
+  --neutral-600: #404254;
+  --neutral-200: #e4e4ef;
+  --neutral-100: #f2f2f7;
+  --neutral-0: #ffffff;
+
+  --purple-blue-400: #d4a0fa;
+  --purple-blue-500: #c27cf8;
+  --yellow-500: #ff9f00;
+  --orange-500: #fe8159;
+  --orange-800: #da3701;
+}
+
+body.dark-mode {
+  --neutral-900: #f0f0f5; /* Almost white */
+  --neutral-800: #e4e5eb; /* Very light gray */
+  --neutral-700: #d6d7e0; /* Soft gray */
+  --neutral-600: #bfc1cc; /* Slightly darker gray */
+  --neutral-200: #2a2b37; /* Deep gray for contrast */
+  --neutral-100: #181922; /* Dark gray for UI elements */
+  --neutral-0: #0d0e13; /* Almost black */
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}

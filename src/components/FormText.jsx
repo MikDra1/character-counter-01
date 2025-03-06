@@ -16,9 +16,17 @@ const StyledArea = styled.textarea`
   background-color: transparent;
   caret-color: var(--neutral-900);
   color: var(--neutral-900);
+  transition: all 0.3s;
+  cursor: pointer;
+  outline: 2px solid transparent;
 
   &::placeholder {
     color: var(--neutral-600);
+  }
+
+  &:hover {
+    outline: 2px solid var(--purple-blue-500);
+    box-shadow: 0 0 10px 1px var(--purple-blue-500);
   }
 `;
 
@@ -70,12 +78,19 @@ const InputCheckboxOption = styled.input`
   appearance: none; /* Remove default styling */
   width: 20px;
   height: 20px;
-  border: 2px solid var(--neutral-900);
+  border: 2px solid var(--neutral-200);
   border-radius: 4px;
   background-color: transparent;
   cursor: pointer;
   display: inline-block;
   position: relative;
+  outline: 2px solid transparent;
+  transition: all .3s;
+
+  &:hover {
+    outline: 2px solid var(--purple-blue-400);
+    outline-offset: 2px;
+  }
 
   &:checked {
     background-color: var(--purple-blue-400);
